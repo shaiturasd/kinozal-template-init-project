@@ -1,73 +1,65 @@
-.main {
+.main
+{
     @extend %margin-buttom-lg;
 }
 
-.site-search,
-.user-login,
-.site-news {
-    margin-bottom: $gap * 2;
-}
-
-.user-login__tabs {
-    position: absolute;
-    right: 15px;
-    border: none;
-}
-
 .new-films,
-.top-week {
-
-    &-title {
+.top-week
+{
+    &-title
+    {
         margin-top: -5px;
 
         @include text-shortener;
     }
 
-    &-row {
-        margin-left: -$gap / 2;
+    &-row
+    {
         margin-right: -$gap / 2;
+        margin-left: -$gap / 2;
     }
 
-    &-item {
-        padding-left: $gap / 2;
-        padding-right: $gap / 2;
-
+    &-item
+    {
         margin-bottom: $gap;
+        padding-right: $gap / 2;
+        padding-left: $gap / 2;
 
-        &:hover {
+        white-space: nowrap;
+
+
+        &:hover
+        {
             .top-week-item,
-            .new-films-item {
+            .new-films-item
+            {
                 color: $color-accent;
             }
 
             .top-week-item__title,
-            .new-films-item__title {
+            .new-films-item__title
+            {
                 color: $color-light;
             }
-        }
-
-        &__img {
-            width: 100%;
-        }
-
-        &__thumbnail {
-            margin-bottom: 0;
         }
     }
 }
 
 
-.film-news-item {
-
-    &__text {
+.film-news-item
+{
+    &__text
+    {
         text-align: justify;
     }
 
-    &__image {
+    &__image
+    {
         width: 100%;
     }
 
-    &__button {
+    &__button
+    {
         float: right;
 
         margin-bottom: ($gap * 2);
@@ -75,11 +67,13 @@
         transition: background-color .25s;
     }
 
-    &__thumbnail {
+    &__thumbnail
+    {
         margin-bottom: 0;
     }
 
-    &:hover {
+    &:hover
+    {
         .thumbnail
         {
             background-color: lighten($color-accent, 15%);
@@ -96,7 +90,8 @@
         }
     }
 
-    h3 > a {
+    h3 > a
+    {
         transition: color .25s;
     }
 }
