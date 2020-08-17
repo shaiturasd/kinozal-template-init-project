@@ -1,0 +1,96 @@
+html {
+    font-size: $font-size;
+}
+
+body {
+    font-size: 1rem;
+    font-family: $font-main;
+}
+
+a {
+    color: $color-primary;
+    transition: color 0.25s;
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        color: $color-accent;
+    }
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    margin: -7.5px 0 45px;
+    font-family: "PT Serif", serif;
+    font-size: 3rem;
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        margin: 0.85em 0 0 15px;
+        content: "";
+        border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    }
+
+    @include xs-min {
+        font-size: 3rem;
+    }
+
+    @include xs {
+        font-size: 2rem;
+    }
+}
+
+h2 {
+    margin: 60px 0 45px 45px;
+    font-family: "PT Serif", serif;
+    font-size: 2.5rem;
+
+    &::before {
+        position: absolute;
+        margin: 0.25em 0 0 0;
+        left: 0;
+        width: 30px;
+        content: "";
+        border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    }
+
+    &::after {
+        position: absolute;
+        width: 100%;
+        margin: 0.85em 0 0 15px;
+        content: "";
+        border-bottom: 3px solid rgba(240, 173, 79, 0.7);
+    }
+
+    @include xs-min {
+        font-size: 2.5rem;
+    }
+
+    @include xs {
+        font-size: 1.75rem;
+    }
+}
+
+h3 {
+
+    @include xs-min {
+        font-size: 1.5rem;
+    }
+
+    @include xs {
+        font-size: 1.25rem;
+    }
+}
+
+.new-films-item__title,
+.top-week-item__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
