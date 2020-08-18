@@ -177,14 +177,6 @@ h2::after {
   border-bottom: 3px solid rgba(240, 173, 79, 0.7);
 }
 
-.new-films-item__title,
-.top-week-item__title {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0;
-  text-align: center;
-}
-
 .header-logo {
   padding: 100px 0;
   text-align: center;
@@ -231,6 +223,15 @@ h2::after {
   padding-right: 7.5px;
   padding-left: 7.5px;
   white-space: nowrap;
+}
+
+.new-films-item__title, .new-films-item__title,
+.top-week-item__title,
+.top-week-item__title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
 }
 
 .new-films-item:hover .top-week-item,
