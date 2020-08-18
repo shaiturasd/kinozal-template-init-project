@@ -78,49 +78,53 @@
         </section>
 
         <section class="user-login panel panel-info hidden-lg hidden-md">
-          <div class="panel-heading">Пользователь</div>
-          <div class="panel-body">
-            <ul class="user-login__tabs nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab">
-                  <span class="glyphicon glyphicon-user" title="Вход"></span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a href="#user-password-main" aria-controls="user-password-main" role="tab" data-toggle="tab">
-                  <span class="glyphicon glyphicon-plus" title="Регистрация"></span>
-                </a>
-              </li>
-            </ul>
-            <div class="user-login__content tab-content">
-              <div role="tabpanel" class="tab-panel fade in active" id="user-login-main">
-                <form action="login">
-                  <div class="form-group">
-                    <input class="form-control input-lg" type="text" placeholder="Логин">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control input-lg" type="password" placeholder="Пароль">
-                  </div>
-                  <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
-                </form>
-              </div>
-              <div role="tabpanel" class="tab-panel fade" id="user-password-main">
-                <form action="login">
-                  <div class="form-group">
-                    <input class="form-control input-lg" type="text" placeholder="Логин">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control input-lg" type="password" placeholder="Пароль">
-                  </div>
-                  <div class="form-group">
-                    <input class="form-control input-lg" type="email" placeholder="Email">
-                  </div>
-                  <button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
-                </form>
-              </div>
-            </div>
+          <div class="panel-heading">
+              <h3 class="panel-title">Пользователь</h3>
           </div>
-        </section>
+          <div class="panel-body">
+              <ul class="user-login__tabs nav nav-tabs" role="tablist">
+                  <li role="presentation" class="active">
+                      <a href="#user-login-sidebar-main" aria-controls="user-login-sidebar-main" role="tab"
+                          data-toggle="tab">
+                          <span class="glyphicon glyphicon-user" title="Вход"></span>
+                      </a>
+                  </li>
+                  <li role="presentation">
+                      <a href="#user-password-sidebar-main" aria-controls="user-password-sidebar-main" role="tab"
+                          data-toggle="tab">
+                          <span class="glyphicon glyphicon-plus" title="Регистрация"></span>
+                      </a>
+                  </li>
+              </ul>
+              <div class="user-login__content tab-content">
+                  <div role="tabpanel" class="tab-pane fade in active" id="user-login-sidebar-main">
+                      <form action="login">
+                          <div class="form-group">
+                              <input class="form-control input-lg" type="text" placeholder="Логин">
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control input-lg" type="password" placeholder="Пароль">
+                          </div>
+                          <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                      </form>
+                  </div>
+                  <div role="tabpanel" class="tab-pane fade" id="user-password-sidebar-main">
+                      <form action="login">
+                          <div class="form-group">
+                              <input class="form-control input-lg" type="text" placeholder="Логин">
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control input-lg" type="password" placeholder="Пароль">
+                          </div>
+                          <div class="form-group">
+                              <input class="form-control input-lg" type="email" placeholder="Email">
+                          </div>
+                          <button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
 
         <section class="new-films">
           <h1 class="new-films-title">Новые фильмы</h1>
