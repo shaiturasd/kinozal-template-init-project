@@ -48,7 +48,7 @@
   border: none;
 }
 
-.panel-info > .panel-heading {
+.panel-info .panel-heading {
   font-size: 1.2rem;
   letter-spacing: .1em;
   color: #fff;
@@ -140,7 +140,6 @@ section {
 }
 
 h1 {
-  z-index: 1;
   font-family: 'PT Serif', serif;
   font-size: 3rem;
   margin: -7.5px 0 45px;
@@ -487,8 +486,8 @@ h2::after {
     font-size: 1.5rem;
   }
   .header-logo__title {
-    margin-right: -15px;
     font-size: 3.5rem;
+    margin-right: -15px;
     letter-spacing: .33em;
   }
 }
@@ -530,8 +529,8 @@ h2::after {
     font-size: 1.25rem;
   }
   .header-logo__title {
-    margin-right: -7.5px;
     font-size: 2.5rem;
+    margin-right: -7.5px;
     letter-spacing: .2em;
   }
 }

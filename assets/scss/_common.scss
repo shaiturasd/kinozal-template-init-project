@@ -36,8 +36,6 @@ h1
     font-family: 'PT Serif', serif;
     font-size: 3rem;
 
-    z-index: 1;
-
     margin: (-$gap / 2) 0 ($gap * 3);
 
     @include xs-min
