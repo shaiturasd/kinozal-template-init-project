@@ -1,18 +1,21 @@
 .main
 {
     @extend %margin-buttom-lg;
+
+    .site-search
+    {
+        margin-bottom: $gap * 3;
+    }
+
+    .user-login
+    {
+        margin-bottom: $gap * 4;
+    }
 }
 
 .new-films,
 .top-week
 {
-    &-title
-    {
-        margin-top: -5px;
-
-        @include text-shortener;
-    }
-
     &-row
     {
         margin-right: -$gap / 2;

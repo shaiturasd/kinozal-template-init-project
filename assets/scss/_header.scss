@@ -30,11 +30,15 @@
         {
             font-size: 3.5rem;
 
+            margin-right: -15px;
+
             letter-spacing: .33em;
         }
         @include xs
         {
             font-size: 2.5rem;
+
+            margin-right: -7.5px;
 
             letter-spacing: .2em;
         }

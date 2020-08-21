@@ -36,7 +36,9 @@ h1
     font-family: 'PT Serif', serif;
     font-size: 3rem;
 
-    margin: -7.5px 0 45px;
+    z-index: 1;
+
+    margin: (-$gap / 2) 0 ($gap * 3);
 
     @include xs-min
     {
@@ -45,6 +47,8 @@ h1
     @include xs
     {
         font-size: 2rem;
+
+        margin: 0 0 30px;
     }
 
     &::after
@@ -74,6 +78,8 @@ h2
     @include xs
     {
         font-size: 1.75rem;
+
+        margin: 45px 0 30px 45px;
     }
 
     &::before

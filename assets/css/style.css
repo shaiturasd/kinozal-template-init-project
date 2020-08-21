@@ -1,5 +1,5 @@
 .header-logo__title, .header-logo__description {
-  text-shadow: 0 0 5px darken #232323, 14%, 0 0 10px darken #232323, 14%, 0 0 20px darken #232323, 14%;
+  text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black;
 }
 
 .header, .main, .left-sidebar {
@@ -48,7 +48,7 @@
   border: none;
 }
 
-.panel-info .panel-heading {
+.panel-info > .panel-heading {
   font-size: 1.2rem;
   letter-spacing: .1em;
   color: #fff;
@@ -96,7 +96,6 @@
 
 .btn-warning {
   float: right;
-  margin-bottom: 30px;
   -webkit-transition: background-color .25s;
   -o-transition: background-color .25s;
   transition: background-color .25s;
@@ -141,6 +140,7 @@ section {
 }
 
 h1 {
+  z-index: 1;
   font-family: 'PT Serif', serif;
   font-size: 3rem;
   margin: -7.5px 0 45px;
@@ -201,14 +201,12 @@ h2::after {
   color: #fff;
 }
 
-.new-films-title,
-.top-week-title {
-  margin-top: -5px;
-  display: block;
-  overflow: hidden;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
+.main .site-search {
+  margin-bottom: 45px;
+}
+
+.main .user-login {
+  margin-bottom: 60px;
 }
 
 .new-films-row,
@@ -327,12 +325,6 @@ h2::after {
   width: 100%;
 }
 
-.site-search,
-.user-login,
-.site-news {
-  margin-bottom: 30px;
-}
-
 .user-login {
   position: relative;
 }
@@ -358,11 +350,14 @@ h2::after {
 .site-news-item {
   position: relative;
   clear: both;
+}
+
+.site-news-item:not(:last-child) {
   min-height: 85px;
   margin-bottom: 15px;
 }
 
-.site-news-item::after {
+.site-news-item:not(:last-child)::after {
   position: absolute;
   right: 0;
   bottom: -5px;
@@ -492,6 +487,7 @@ h2::after {
     font-size: 1.5rem;
   }
   .header-logo__title {
+    margin-right: -15px;
     font-size: 3.5rem;
     letter-spacing: .33em;
   }
@@ -524,14 +520,17 @@ h2::after {
 @media (max-width: 575.8px) {
   h1 {
     font-size: 2rem;
+    margin: 0 0 30px;
   }
   h2 {
     font-size: 1.75rem;
+    margin: 45px 0 30px 45px;
   }
   h3 {
     font-size: 1.25rem;
   }
   .header-logo__title {
+    margin-right: -7.5px;
     font-size: 2.5rem;
     letter-spacing: .2em;
   }
